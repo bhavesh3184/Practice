@@ -1,0 +1,2 @@
+/bin/spark-submit --class  com.bavesh.sparkstreaming.sparkConsumer  --master local[*]
+D:/My Data/Bhavesh/Big Data/VarmaBhavesh/HadoopLearning/Practice/spark-streaming/target/spark-streaming-1.0-SNAPSHOT.jar
