@@ -4,10 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.bavesh</groupId>
+    <groupId>com.bhavesh</groupId>
     <artifactId>hadoop</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <modules>
+        <module>kafka-config</module>
+        <module>spark-streaming</module>
+    </modules>
 
     <build>
         <plugins>
@@ -22,5 +27,11 @@
             </plugin>
         </plugins>
     </build>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 </project>
