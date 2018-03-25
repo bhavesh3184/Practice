@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
-public class PrepareReuiqredSparkObjects {
+public class PrepareRequiredSparkObjects {
 
     public static class PrepareObjects {
 
@@ -54,7 +54,7 @@ public class PrepareReuiqredSparkObjects {
 
         public void LoadProperties() {
             try {
-                InputStream inputStream = sparkConsumer.class.getResourceAsStream("/config.properties");
+                InputStream inputStream = SparkConsumer.class.getResourceAsStream("/config.properties");
                 Properties props = new Properties();
                 props.load(inputStream);
 
