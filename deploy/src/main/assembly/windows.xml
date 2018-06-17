@@ -1,0 +1,36 @@
+<assembly>
+    <id>windows</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}</directory>
+            <outputDirectory>deployer</outputDirectory>
+            <includes>
+                <include>deployer.tar.gz</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>${project.basedir}/src/main/batch</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <lineEnding>windows</lineEnding>
+        </fileSet>
+
+        <fileSet>
+            <directory>${project.basedir}/src/main/env</directory>
+            <outputDirectory>env</outputDirectory>
+            <includes>
+                <include>*</include>
+            </includes>
+            <fileMode>0750</fileMode>
+            <lineEnding>unix</lineEnding>
+        </fileSet>
+        <!-- add fileSet entries for other folders under root -->
+    </fileSets>
+</assembly>
