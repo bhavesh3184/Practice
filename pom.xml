@@ -12,6 +12,7 @@
     <modules>
         <module>kafka-config</module>
         <module>spark-streaming</module>
+        <module>deploy</module>
     </modules>
 
     <properties>
