@@ -1,0 +1,17 @@
+@ECHO OFF
+
+SET DEPLOY_USER=bhavesh3184
+SET ENV_FILE_PATH=env/set_DEV_ENV.sh
+
+SET GW_NODE=gw03.itversity.com
+::SET KAFKA_NODE1=k1
+::SET KAFKA_NODE2=k2
+::SET KAFKA_NODE3=k3
+
+SET DEPLOY_BASE_DIR=/home/bhavesh3184/Deployment
+
+::IF NOT %DEPLOYER_ID%=="" (
+::SET DEPLOY_DIR=%DEPLOY_BASE_DIR%/%DEPLOYER_ID%/staging
+::) else (
+SET DEPLOY_DIR=%DEPLOY_BASE_DIR%/Staging
+::)

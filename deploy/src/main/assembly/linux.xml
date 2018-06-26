@@ -1,0 +1,20 @@
+<assembly>
+    <id>linux</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <directory>${project.basedir}/src/main/bash</directory>
+            <outputDirectory>.</outputDirectory>
+            <includes>
+                <include>**/.*.sh</include>
+            </includes>
+            <fileMode>0750</fileMode>
+            <lineEnding>unix</lineEnding>
+        </fileSet>
+        <!-- add fileSet entries for other folders under root -->
+    </fileSets>
+</assembly>
